@@ -16,3 +16,9 @@ Instagram clone with Express + Prisma + React and React Native
 
 # dotenv
 .env 파일을 읽음
+
+# About GraphQL Schema and Resolvers
+yarn add graphql-tools merge-grapghql-schemas 
+
+# yarn add morgan
+middleware로 로깅전용 모듈(logger)
