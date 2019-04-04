@@ -2,6 +2,23 @@
 
 Instagram clone with Express + Prisma + React and React Native
 
+## User Stroies
+
+- [x] Create account 
+- [ ] Request Secret 🔒
+- [ ] Confirm Secret (Login)
+- [ ] Like / Unlike a photo
+- [ ] Comment on a photo
+- [ ] Search by user
+- [ ] Search by location
+- [ ] See user profile
+- [ ] Follow / Unfollow User
+- [ ] Edit my profile
+- [ ] Upload photo
+- [ ] Edit the photo (Delete)
+- [ ] See the feed
+
+
 ## Setting
 ### About Babel
     1. babel은 ES6/ES7 코드를 ECMAScript5 문법으로 변환시켜주는(transpiling) 자바스크립트 모듈이다. 
@@ -29,19 +46,7 @@ yarn add graphql-tools merge-grapghql-schemas
 
 middleware로 로깅전용 모듈(logger)
 
+### nodemailer📫
 
-## User Stroies
-
-- [x] Create account 
-- [ ] Request Secret
-- [ ] Confirm Secret (Login)
-- [ ] Like / Unlike a photo
-- [ ] Comment on a photo
-- [ ] Search by user
-- [ ] Search by location
-- [ ] See user profile
-- [ ] Follow / Unfollow User
-- [ ] Edit my profile
-- [ ] Upload photo
-- [ ] Edit the photo (Delete)
-- [ ] See the feed
+    1. mail을 보내주는 모듈로 'yarn add nodemailer'로 설치할 수 있다.
+    2. yarn add nodemailer-sendgrid-transport : sendgrid라는 메일을 보내주는 api를 사용해서 메일을 보내준다. 
