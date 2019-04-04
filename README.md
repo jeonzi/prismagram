@@ -32,7 +32,9 @@ middleware로 로깅전용 모듈(logger)
 
 ## User Stroies
 
-- [ ] Log in
+- [x] Create account 
+- [ ] Request Secret
+- [ ] Confirm Secret (Login)
 - [ ] Like / Unlike a photo
 - [ ] Comment on a photo
 - [ ] Search by user
@@ -40,7 +42,6 @@ middleware로 로깅전용 모듈(logger)
 - [ ] See user profile
 - [ ] Follow / Unfollow User
 - [ ] Edit my profile
-- [ ] Create account
 - [ ] Upload photo
 - [ ] Edit the photo (Delete)
 - [ ] See the feed

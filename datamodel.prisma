@@ -11,7 +11,8 @@ type User {
   likes: [Like!]!
   comments: [Comment!]
   rooms: [Room!]!
-  loginSecret: String!
+  loginSecret: String
+  # loginSecret: String! @default(value:"blahblahblah") => @default 값으로 임의 값을 줄 수 있다(prisma 문법)
 }
 
 type Post {
