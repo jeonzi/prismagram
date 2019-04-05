@@ -5,9 +5,8 @@ Instagram clone with Express + Prisma + React and React Native
 ## User Stroies
 
 - [x] Create account 
-- [ ] Request Secret 🔒
-- [ ] Confirm Secret (Login)
-- [ ] Like / Unlike a photo
+- [x] Request Secret 🔒
+- [x] Like / Unlike a photo
 - [ ] Comment on a photo
 - [ ] Search by user
 - [ ] Search by location
@@ -50,3 +49,12 @@ middleware로 로깅전용 모듈(logger)
 
     1. mail을 보내주는 모듈로 'yarn add nodemailer'로 설치할 수 있다.
     2. yarn add nodemailer-sendgrid-transport : sendgrid라는 메일을 보내주는 api를 사용해서 메일을 보내준다. 
+
+### Passportjs
+
+    1. passport는 인증 관련한 모든 일을 한다. jwt 토큰이나 쿠키에서 정보를 가져와서 사용자 정보에 저장한다.
+    2. yarn add passport-jwt passport : 로그인시 인증을 위해서 passportjs의 passport-jwt 라이브러리를 설치한다.
+
+### jsonwebtoken
+    
+web token을 생성해주는 모듈이다. yarn add jsonwebtoken으로 설치
