@@ -14,6 +14,8 @@ const server = new GraphQLServer({
   context: ({ request }) => ({ request })
 });
 
+// morgan은 미들웨어 로깅 모듈 => app.use(logger('dev'))로 미들웨어 생성 가능
+// the logger middleware will generate a detailed log using what is called the default format.
 server.express.use(logger("dev"));
 server.express.use(authenticateJwt);
 

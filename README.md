@@ -7,8 +7,8 @@ Instagram clone with Express + Prisma + React and React Native
 - [x] Create account 
 - [x] Request Secret 🔒
 - [x] Confirm Secret (Login)
-- [ ] Like / Unlike a photo
-- [ ] Comment on a photo
+- [x] Like / Unlike a photo
+- [x] Comment on a photo
 - [ ] Search by user
 - [ ] Search by location
 - [ ] See user profile
@@ -44,7 +44,8 @@ yarn add graphql-tools merge-grapghql-schemas
 
 ### yarn add morgan
 
-middleware로 로깅전용 모듈(logger)
+middleware로 로깅 전용 모듈(logger) 
+app.use(logger('dev'))로 미들웨어 생성 가능
 
 ### nodemailer📫
 
