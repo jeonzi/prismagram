@@ -4,6 +4,7 @@ import logger from "morgan";
 import schema from "./schema";
 import "./passport";
 import { authenticateJwt } from "./passport";
+import { isAuthenticated } from "./middlewares";
 
 const PORT = process.env.PORT || 4000;
 
@@ -11,7 +12,7 @@ const PORT = process.env.PORT || 4000;
 // context는 resolver 사이에서 정보를 공유할 때 사용한다.
 const server = new GraphQLServer({
   schema,
-  context: ({ request }) => ({ request })
+  context: ({ request }) => ({ request, isAuthenticated })
 });
 
 // morgan은 미들웨어 로깅 모듈 => app.use(logger('dev'))로 미들웨어 생성 가능

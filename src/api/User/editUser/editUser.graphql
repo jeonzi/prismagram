@@ -1,0 +1,11 @@
+type Mutation {
+  editUser(
+    username: String
+    email: String
+    firstName: String
+    lastName: String
+    bio: String
+  ): User!
+}
+
+# username과 email은 unique한 속성이므로 중복되는 것으로 바꾸면 error 발생
