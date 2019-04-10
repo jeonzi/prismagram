@@ -1,8 +1,4 @@
-type ProfileResponse {
-  user: User!
-  posts: [Post!]!
-}
-
+# deep realation을 갖고 있는 경우에 따로 표기를 해주어야 한다 
 type Query {
-    me: ProfileResponse!
+    me: UserProfile!
 }
